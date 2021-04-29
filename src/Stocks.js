@@ -1,4 +1,5 @@
 import "./App.css";
+import { stockData } from "./data.js";
 
 export const Stocks= ()=> {
     return (
