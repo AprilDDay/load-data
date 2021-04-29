@@ -1,11 +1,21 @@
+:root {
+  --first-color: green;
+}
+
 .App {
   text-align: center;
+  color: --first-color;
 }
 
 .stock-container {
   padding-left: 3em;
   padding-right: 3em;
   margin-top: 3em;
+}
+
+.header {
+  background-color: black;
+  color: red;
 }
 
 
