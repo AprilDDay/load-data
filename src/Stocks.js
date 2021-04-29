@@ -4,7 +4,7 @@ import { stockData } from "./data.js";
 export const Stocks= ()=> {
     return (
         <>
-            <div>Welcome to Tracking Stock</div>
+
             <div className="stock-container">
                 {stockData.map((data, key) => {
                     return (

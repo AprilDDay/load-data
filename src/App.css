@@ -19,6 +19,21 @@
 }
 
 
+
+
+.table {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+.td {
+  border: 1px solid gray;
+  width: 20em;
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
