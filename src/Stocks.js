@@ -26,7 +26,7 @@ export const Stocks= ()=> {
             {stockData.map((data, key) => {
                 return (
                     <div key={key}>
-                        <input type="radio" value={data.company} name="moneyStuff"/>{data.company}<br/>
+                        <p name="moneyStuff"/>{data.company}<br/>
                         <input type="radio" value={data.ticker} name="moneyStuff"/>{data.ticker} <br/>
                         <input type="radio" value={data.stockPrice} name="moneyStuff"/>{data.stockPrice} <br/>
                         <input type="radio" value={data.timeElapsed} name="moneyStuff"/>{data.timeElapsed} <br/>
