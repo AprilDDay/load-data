@@ -1,31 +1,23 @@
 import "./App.css";
 import { stockData } from "./data.js";
 
+//const random = array[Math.floor(Math.random()*array.length)];
+
+const randomElement = Math.floor(Math.random()*stockData.length);
+
+console.log(randomElement);
+
+//const stockInput = stockData.id[randomElement];
+//console.log("stockInput=", stockInput);
+
 export const Stocks= ()=> {
     return (
         <>
 
-            <div className="stock-container">
-                {stockData.map((data, key) => {
-                    return (
-                        <div key={key}>
-                            {data.company + 
-                            " , " +
-                            data.ticker +
-                            " , " +
-                            data.stockPrice +
-                            " , " +
-                            data.timeElapsed
-                            }
-                        </div>
-                    );
-                })}
-            </div>
-
             <div className="radioButtons">        
-            {stockData.map((data, key) => {
+            {stockData.map((data, randomElement) => {
                 return (
-                    <div key={key}>
+                    <div key={randomElement}>
                         <p name="moneyStuff"/>{data.company}<br/>
                         <input type="radio" value={data.ticker} name="moneyStuff"/>{data.ticker} <br/>
                         <input type="radio" value={data.stockPrice} name="moneyStuff"/>{data.stockPrice} <br/>

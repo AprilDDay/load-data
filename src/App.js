@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import {Stocks} from "./Stocks.js";
-import {stockData} from "./data";
 import { HomePageHeader } from "./HomePageHeader.js";
 
 function App(){
