@@ -3,9 +3,9 @@ import { stockData } from "./data.js";
 
 //const random = array[Math.floor(Math.random()*array.length)];
 
-const randomElement = Math.floor(Math.random()*stockData.length);
+//const randomElement = Math.floor(Math.random()*stockData.length);
 
-console.log(randomElement);
+//console.log(randomElement);
 
 //key = randomElement;
 
@@ -16,8 +16,10 @@ console.log(randomElement);
 
 export const Stocks= ()=> {
 
-//    const randomElement = Math.floor(Math.random()*stockData.length);
+    const randomElement = Math.floor(Math.random()*stockData.length);
+    console.log(randomElement);
 
+    
     return (
         <>
 
@@ -43,6 +45,7 @@ export const Stocks= ()=> {
                             return (
                                 <div>
                                     <p name="moneyStuff"/>{data.company}<br/>
+                                    <p>{data.key}</p>
                                     <input type="radio" value={data.ticker} name="moneyStuff"/>{data.ticker} <br/>
                                     <input type="radio" value={data.stockPrice} name="moneyStuff"/>{data.stockPrice} <br/>
                                     <input type="radio" value={data.timeElapsed} name="moneyStuff"/>{data.timeElapsed} <br/>
