@@ -7,17 +7,24 @@ const randomElement = Math.floor(Math.random()*stockData.length);
 
 console.log(randomElement);
 
+//key = randomElement;
+
 //const stockInput = stockData.id[randomElement];
 //console.log("stockInput=", stockInput);
 
+{/*Need to get the following to return one radio button set not all of them*/}
+
 export const Stocks= ()=> {
+
+//    const randomElement = Math.floor(Math.random()*stockData.length);
+
     return (
         <>
 
             <div className="radioButtons">        
-            {stockData.map((data, randomElement) => {
+            {stockData.map((data, key) => {
                 return (
-                    <div key={randomElement}>
+                    <div>
                         <p name="moneyStuff"/>{data.company}<br/>
                         <input type="radio" value={data.ticker} name="moneyStuff"/>{data.ticker} <br/>
                         <input type="radio" value={data.stockPrice} name="moneyStuff"/>{data.stockPrice} <br/>
@@ -28,6 +35,24 @@ export const Stocks= ()=> {
                     );
                 })}
             </div>
+
+                <div>Returning one item
+                </div>
+                    <div className="radioButtons">        
+                        {stockData.find((data, randomElement) => {
+                            return (
+                                <div>
+                                    <p name="moneyStuff"/>{data.company}<br/>
+                                    <input type="radio" value={data.ticker} name="moneyStuff"/>{data.ticker} <br/>
+                                    <input type="radio" value={data.stockPrice} name="moneyStuff"/>{data.stockPrice} <br/>
+                                    <input type="radio" value={data.timeElapsed} name="moneyStuff"/>{data.timeElapsed} <br/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            );
+                        })}
+                    </div>
+
         </>
 
     ); {/*close return */}
