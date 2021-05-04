@@ -39,7 +39,7 @@ export const Stocks= ()=> {
                 <div>Returning one item
                 </div>
                     <div className="radioButtons">        
-                        {stockData.find((data, randomElement) => {
+                        {stockData.reduce((data, randomElement) => {
                             return (
                                 <div>
                                     <p name="moneyStuff"/>{data.company}<br/>
