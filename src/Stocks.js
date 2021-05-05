@@ -12,6 +12,8 @@ import { stockData } from "./data.js";
 //const stockInput = stockData.id[randomElement];
 //console.log("stockInput=", stockInput);
 
+{/*Will need an event listener eventually... */}
+
 {/*Need to get the following to return one radio button set not all of them*/}
 
 export const Stocks= ()=> {
@@ -41,11 +43,12 @@ export const Stocks= ()=> {
                 <div>Returning one item
                 </div>
                     <div className="radioButtons">        
-                        {stockData.reduce((data, randomElement) => {
+                        {stockData.reduce((data, key=randomElement) => {
                             return (
                                 <div>
                                     <p name="moneyStuff"/>{data.company}<br/>
-                                    <p>{data.key}</p>
+                                    <p>Random Element plain is { randomElement }</p>
+                                    <p>Random Element is {data.randomElement}</p>
                                     <input type="radio" value={data.ticker} name="moneyStuff"/>{data.ticker} <br/>
                                     <input type="radio" value={data.stockPrice} name="moneyStuff"/>{data.stockPrice} <br/>
                                     <input type="radio" value={data.timeElapsed} name="moneyStuff"/>{data.timeElapsed} <br/>
