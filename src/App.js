@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import {Stocks} from "./Stocks.js";
 import { HomePageHeader } from "./HomePageHeader.js";
+import {OneProbem } from "./OneProblem.js";
 
 function App(){
   return (
@@ -9,6 +10,8 @@ function App(){
     <div classname="App">
       <HomePageHeader />
       <Stocks />
+      <h1>This is OneProblem Component</h1>
+      <OneProblem />
     </div>
   ); 
 }
