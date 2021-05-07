@@ -8,29 +8,25 @@ export const OneProblem = () => {
     const randomElement = Math.floor(Math.random()*stockData.length);
     console.log("this is the randomElement:", randomElement);
     let thisCompany = stockData[randomElement];
-    console.log("this is the thisCompany: ", thisCompany);
+    console.log("this is the thisCompany (array position): ", thisCompany);
 
-    if (thisCompany == stockData.id ){
+//    if (thisCompany == stockData.id ){
         return ( 
             <>
-                <div>
-                    <p>o</p>
-                </div>
+ 
                                           <div>
-                                    <p name="moneyStuff"/>{stockData.company}<br/>
-                                    <p>Random Element plain is { randomElement }</p>
-                                    <p>Random Element is {stockData.randomElement}</p>
-                                    <input type="radio" value={stockData.ticker} name="moneyStuff"/>{stockData.ticker} <br/>
-                                    <input type="radio" value={stockData.stockPrice} name="moneyStuff"/>{stockData.stockPrice} <br/>
-                                    <input type="radio" value={stockData.timeElapsed} name="moneyStuff"/>{stockData.timeElapsed} <br/>
+                                    
+                                    <p name="moneyStuff"/>{thisCompany.company}<br/> 
+                                    <input type="radio" value={thisCompany.ticker} name="moneyStuff"/>{thisCompany.ticker} <br/>
+                                    <input type="radio" value={thisCompany.stockPrice} name="moneyStuff"/>{thisCompany.stockPrice} <br/>
+                                    <input type="radio" value={thisCompany.timeElapsed} name="moneyStuff"/>{thisCompany.timeElapsed} <br/>
                                     <br/>
                                     <br/>
                                 </div>
         </>
-        )
-    } else {
-        console.log("gotcha");
-    }
+        );
+  
+    
 };
 
 //export default OneProblem;

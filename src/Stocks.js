@@ -40,25 +40,6 @@ export const Stocks= ()=> {
                 })}
             </div>
 
-                <div>Returning one item
-                </div>
-                    <div className="radioButtons">        
-                        {stockData.reduce((data, key=randomElement) => {
-                            return (
-                                <div>
-                                    <p name="moneyStuff"/>{data.company}<br/>
-                                    <p>Random Element plain is { randomElement }</p>
-                                    <p>Random Element is {data.randomElement}</p>
-                                    <input type="radio" value={data.ticker} name="moneyStuff"/>{data.ticker} <br/>
-                                    <input type="radio" value={data.stockPrice} name="moneyStuff"/>{data.stockPrice} <br/>
-                                    <input type="radio" value={data.timeElapsed} name="moneyStuff"/>{data.timeElapsed} <br/>
-                                    <br/>
-                                    <br/>
-                                </div>
-                            );
-                        })}
-                    </div>
-
         </>
 
     ); {/*close return */}
