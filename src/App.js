@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import {Stocks} from "./Stocks.js";
 import { HomePageHeader } from "./HomePageHeader.js";
-import {OneProbem } from "./OneProblem.js";
+import {OneProblem } from "./OneProblem.js";
 
 function App(){
   return (
