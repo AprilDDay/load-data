@@ -9,7 +9,6 @@ function App(){
     
     <div classname="App">
       <HomePageHeader />
-      <Stocks />
       <h1>This is OneProblem Component</h1>
       <OneProblem />
     </div>

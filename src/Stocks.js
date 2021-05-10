@@ -1,20 +1,6 @@
 import "./App.css";
 import { stockData } from "./data.js";
 
-//const random = array[Math.floor(Math.random()*array.length)];
-
-//const randomElement = Math.floor(Math.random()*stockData.length);
-
-//console.log(randomElement);
-
-//key = randomElement;
-
-//const stockInput = stockData.id[randomElement];
-//console.log("stockInput=", stockInput);
-
-{/*Will need an event listener eventually... */}
-
-{/*Need to get the following to return one radio button set not all of them*/}
 
 export const Stocks= ()=> {
 
