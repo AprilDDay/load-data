@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-import {Stocks} from "./Stocks.js";
+//import {Stocks} from "./Stocks.js";
 import { HomePageHeader } from "./HomePageHeader.js";
-import {OneProblem } from "./OneProblem.js";
+//import {OneProblem } from "./OneProblem.js";
 import OneProblemRev from "./OneProblemRev";
 
 function App(){

@@ -2,20 +2,22 @@ import React from "react";
 import "./App.css";
 import { stockData } from "./data.js";
 
-
 class OneProblemRev extends React.Component {    
 
-    thisCompany = "April";
-
     random(){
-        const randomElement = Math.floor(Math.random()*stockData.length);
-        console.log("this is the randomElement:", randomElement);
-        thisCompany = stockData[randomElement];
+        React.useEffect(()=>{
+            window.addEventListener('keydown', (event) => {
+    
+                const randomElement = Math.floor(Math.random()*stockData.length);
+                console.log("this is the randomElement:", randomElement);
+                const thisCompany = stockData[randomElement];
+
+            }, []);
+        });
+
     }
 
-render (){   React.useEffect(()=>{
-        window.addEventListener('keydown', (event) => {
-         
+    render (){            
         return ( 
             <>
                 <div>
@@ -26,10 +28,8 @@ render (){   React.useEffect(()=>{
                 </div>
             </>
         );
-        });
-    
-}, []);
-}
+        
+    }
 }
 
 export default OneProblemRev;
