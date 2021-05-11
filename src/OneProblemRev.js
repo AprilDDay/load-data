@@ -10,7 +10,7 @@ class OneProblemRev extends React.Component {
     random(){
         //React.useEffect(()=>{
             window.addEventListener('keydown', (event) => {
-    
+                {/*while (this.state)   NEED TO HAVE A WHILE LOOP STATEMENT HERE*/}
                 const randomElement = Math.floor(Math.random()*stockData.length);
                 console.log("this is the randomElement:", randomElement);
                 const thisCompany = stockData[randomElement];
