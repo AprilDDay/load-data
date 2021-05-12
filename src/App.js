@@ -8,7 +8,7 @@ import OneProblemRev from "./OneProblemRev";
 function App(){
   return (
     
-    <div classname="App">
+    <div className="App">
       <HomePageHeader />
       <h1>This is OneProblem Component</h1>
       <OneProblemRev />
