@@ -35,7 +35,7 @@ class OneProblemRev extends React.Component {
                 <div onClick={this.random}>
 
                      {/*<p name="moneyStuff" onClick={this.random}/>{this.thisCompany.company}<p/>*/}
-                     <p name ="moneyStuff" onClick={this.random}/>{this.thisCompany}<p/>
+                     <p name ="moneyStuff" />{this.thisCompany}<p/>
                      {/*
                          <input type="radio" value={this.thisCompany.ticker} name="moneyStuff"/>{this.thisCompany.ticker} <br/>
                         <input type="radio" value={thisCompany.stockPrice} name="moneyStuff"/>{thisCompany.stockPrice} <br/>
