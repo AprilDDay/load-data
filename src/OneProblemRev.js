@@ -28,18 +28,22 @@ class OneProblemRev extends React.Component {
 
     render (){            
 
+        {/*
         var companies = stockData;
         var companyList = companies.map(function(company){
             return<li>{company}</li>;
         })
+    */}
 
         return ( 
               
             <>
+    
+    {/*
                 <div>
                     <p>{companyList}</p>
                 </div>
-           
+    */}    
                 <button onClick={this.random}>start</button> 
            
                 <div >
