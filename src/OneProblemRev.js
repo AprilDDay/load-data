@@ -12,7 +12,8 @@ class OneProblemRev extends React.Component {
                 const randomElement = Math.floor(Math.random()*stockData.length);
                 console.log("this is the randomElement:", randomElement);
                 const thisCompany = stockData[randomElement];
-                 console.log("thisCompany=", thisCompany);   
+                 console.log("thisCompany=", thisCompany);  
+                 {/* 
                 <>
                     <p name="moneyStuff" />{thisCompany.company}<br/> 
                         <input type="radio" value={thisCompany.ticker} name="moneyStuff" onClick={this.random}/>{thisCompany.ticker} <br/>
@@ -20,6 +21,8 @@ class OneProblemRev extends React.Component {
                         <input type="radio" value={thisCompany.timeElapsed} name="moneyStuff" onClick={this.random}/>{thisCompany.timeElapsed} <br/>
                 </>
             
+                 */}
+
             }, []);
         //});
 
@@ -49,11 +52,12 @@ class OneProblemRev extends React.Component {
                 <div >
                      {/*<p name="moneyStuff" onClick={this.random}/>{this.thisCompany.company}<p/>*/}
                      {/*<p name ="moneyStuff" />{this.thisCompany}<p/>*/}
-                    {/* 
-                         <input type="radio" value={this.thisCompany.ticker} name="moneyStuff"/>{this.thisCompany.ticker} <br/>
+                     
+                     {/*
+                        <input type="radio" value={thisCompany.ticker} name="moneyStuff"/>{thisCompany.ticker} <br/>
                         <input type="radio" value={thisCompany.stockPrice} name="moneyStuff"/>{thisCompany.stockPrice} <br/>
-                        <input type="radio" value={thisCompany.timeElapsed} name="moneyStuff"/>{thisCompany.timeElapsed} <br/>
-                    */}
+                        <input type="radio" value={hisCompany.timeElapsed} name="moneyStuff"/>{thisCompany.timeElapsed} <br/>
+                     */}
                  </div>
             </>
         );
