@@ -4,7 +4,6 @@ import { stockData } from "./data.js";
 
 class OneProblemRev extends React.Component {    
 
-
     random(){
         //React.useEffect(()=>{
             {/*endless loop... */}
@@ -24,19 +23,29 @@ class OneProblemRev extends React.Component {
             }, []);
         //});
 
+
     }
 
     render (){            
+
+        var companies = stockData;
+        var companyList = companies.map(function(company){
+            return<li>{company}</li>;
+        })
+
         return ( 
               
             <>
+                <div>
+                    <p>{companyList}</p>
+                </div>
+           
                 <button onClick={this.random}>start</button> 
            
-                <div onClick={this.random}>
-
+                <div >
                      {/*<p name="moneyStuff" onClick={this.random}/>{this.thisCompany.company}<p/>*/}
-                     <p name ="moneyStuff" />{this.thisCompany}<p/>
-                     {/*
+                     {/*<p name ="moneyStuff" />{this.thisCompany}<p/>*/}
+                    {/* 
                          <input type="radio" value={this.thisCompany.ticker} name="moneyStuff"/>{this.thisCompany.ticker} <br/>
                         <input type="radio" value={thisCompany.stockPrice} name="moneyStuff"/>{thisCompany.stockPrice} <br/>
                         <input type="radio" value={thisCompany.timeElapsed} name="moneyStuff"/>{thisCompany.timeElapsed} <br/>
