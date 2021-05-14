@@ -3,7 +3,6 @@ import React from "react";
 import "./App.css";
 import { stockData } from "./data.js";
 
-
 export const OneProblem = () => {    
 
     const randomElement = Math.floor(Math.random()*stockData.length);
@@ -21,6 +20,5 @@ export const OneProblem = () => {
                 </div>
             </>
         );
-    
 };
 
