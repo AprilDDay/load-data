@@ -11,6 +11,7 @@ const Effort = () => {
 return (
     <div>
         <button onClick={() => {setSelected(randomNumber)} }>next number</button>
+        <div>{randomNumber}</div>
     </div> 
     )
 }
