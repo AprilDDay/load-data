@@ -15,9 +15,9 @@ const Effort = () => {
     if (randomNumber === correctNumber){
         console.log("that is correct!");
         const correctAnswer = "That is correct!";
-//        return(
-  //          <div id="correct">That is correct!</div>
-    //    )
+        return(
+            <div id="correct">{correctAnswer}</div>
+        )
     } else {
         console.log("try again!");
       //  return(
