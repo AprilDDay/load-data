@@ -16,7 +16,10 @@ const Effort = () => {
         console.log("that is correct!");
         const correctAnswer = "That is correct!";
         return(
+            
             <div id="correct">{correctAnswer}</div>
+           ///* <button onClick={()=> {setSelected(randomNumber)}}>next number</button> */}
+            
         )
     } else {
         console.log("try again!");
