@@ -1,5 +1,6 @@
 import { useState } from 'react';
-//import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
+//import App from './App.js';
 
 const Effort = () => {
     const [selected, setSelected] = useState(0);
@@ -44,9 +45,8 @@ return (
 
 export default Effort;
 
-{/*
-ReactDOM.render(
-    <App/>,
-    document.getElementById('root')
-)
-*/}
+//
+//ReactDOM.render(
+  //  <App/>,
+    //document.getElementById('root')
+//)

@@ -7,6 +7,7 @@ import {OneProblem } from "./OneProblem.js";
 import OneProblemRev from "./OneProblemRev";
 import Effort from "./changeRandom";
 
+
 function App(){
   return (
     
@@ -27,4 +28,11 @@ ReactDOM.render(
   document.getElementById('root')
 )
 
+
 export default App;
+
+
+ReactDOM.render(
+    <App/>,
+    document.getElementById('root')
+)
