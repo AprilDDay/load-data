@@ -5,6 +5,7 @@ export const stockData = [
       ticker: "NCY",
       stockPrice: "22.76 USD",
       timeElapsed: "5 sec ago",
+      rightAnswer: "NCY",
     },
     {
       id: 1,
@@ -12,6 +13,7 @@ export const stockData = [
       ticker: "MO",
       stockPrice: "45.28 USD",
       timeElapsed: "10 sec ago",
+      rightAnswer: "45.28 USD",
     },
     {
       id: 2,
@@ -19,6 +21,7 @@ export const stockData = [
       ticker: "NS",
       stockPrice: "341.79 USD",
       timeElapsed: "3 sec ago",
+      rightAnswer: "NS",
     },
     {
       id: 3,
@@ -26,6 +29,7 @@ export const stockData = [
       ticker: "SL",
       stockPrice: "9.87 USD",
       timeElapsed: "4 sec ago",
+      rightAnswer: "4 sec ago",
     },
     {
       id: 4,
@@ -33,6 +37,7 @@ export const stockData = [
       ticker: "WW",
       stockPrice: "300.99 USD",
       timeElapsed: "10 sec ago",
+      rightAnswer: "WW",
     },
     {
       id: 5,
@@ -40,5 +45,6 @@ export const stockData = [
       ticker: "WWOW",
       stockPrice: "115.22 USD",
       timeElapsed: "12 sec ago",
+      rightAnswer: "115.22 USD",
     },
   ];

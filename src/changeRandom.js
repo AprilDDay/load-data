@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import ReactDOM from 'react-dom';
+//import { useState } from 'react';
+//import ReactDOM from 'react-dom';
 //import App from './App.js';
 
+{/*}
 const Effort = () => {
     const [selected, setSelected] = useState(0);
     const randomNumber = Math.floor(Math.random()*6);
@@ -19,8 +20,7 @@ const Effort = () => {
         return(
             
             <div id="correct">{correctAnswer}</div>
-           ///* <button onClick={()=> {setSelected(randomNumber)}}>next number</button> */}
-            
+               
         )
     } else {
         console.log("try again!");
@@ -45,8 +45,4 @@ return (
 
 export default Effort;
 
-//
-//ReactDOM.render(
-  //  <App/>,
-    //document.getElementById('root')
-//)
+*/}

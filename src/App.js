@@ -4,8 +4,9 @@ import "./App.css";
 //import {Stocks} from "./Stocks.js";
 import { HomePageHeader } from "./HomePageHeader.js";
 import {OneProblem } from "./OneProblem.js";
-import OneProblemRev from "./OneProblemRev";
-import Effort from "./changeRandom";
+//import OneProblemRev from "./OneProblemRev";
+//import Effort from "./changeRandom";
+import reactDom from "react-dom";
 
 
 function App(){
@@ -14,20 +15,25 @@ function App(){
     <div className="App">
       <HomePageHeader />
       <h1>This is OneProblem Component</h1>
-      <OneProblem />
-      <h2>This is one random OneProblemRev Component</h2>
-      <OneProblemRev />
-      <h3>Keep putting in Effort</h3>
+      <OneProblem /> {/*THIS SWITCHES OVER ONLY ONCE AFTER HITTING SUBMIT*/}
+  {/*    <h3>Keep putting in Effort</h3>
       <Effort />
+  */}
     </div>
   ); 
 }
 
+reactDom.render(
+  <OneProblem />,
+  document.getElementById('root')
+)
+
+{/*}
 ReactDOM.render(
   <Effort />, 
   document.getElementById('root')
 )
-
+*/}
 
 export default App;
 
