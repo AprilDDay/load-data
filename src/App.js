@@ -1,10 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
-//import {Stocks} from "./Stocks.js";
 import { HomePageHeader } from "./HomePageHeader.js";
 import {OneProblem } from "./OneProblem.js";
-//import OneProblemRev from "./OneProblemRev";
 //import Effort from "./changeRandom";
 import reactDom from "react-dom";
 
@@ -35,10 +33,10 @@ ReactDOM.render(
 )
 */}
 
+ReactDOM.render(
+  <App/>,
+  document.getElementById('root')
+)
+
 export default App;
 
-
-ReactDOM.render(
-    <App/>,
-    document.getElementById('root')
-)

@@ -8,15 +8,21 @@ export const OneProblem = () => {
 
     const [selected, setSelected] = useState(0);
     const randomElement = Math.floor(Math.random()*stockData.length);
-    console.log("this is the randomElement:", randomElement);
+    console.log("this is the randomElement OneProblem element:", randomElement);
     let thisCompany = stockData[randomElement];
-    console.log("this is the thisCompany (array position): ", thisCompany);
+    console.log("this is the thisCompany (array position) OneProblem element: ", thisCompany);
 
     {/*THIS FUNCTION IS NOT SHOWING A NEW RADIO BUTTON BUT IN CONSOLE LOG NEW RADIO BUTTON*/}
     function checkAnswer() {
         if(selected === thisCompany.rightAnswer){
+            
             const randomElement = Math.floor(Math.random()*stockData.length);
             let thisCompany = stockData[randomElement];
+
+            return(
+                <div>That's CORRECT!</div>
+            );
+        
         } else {
             console.log("Oops! TRY AGAIN!"); 
         }
