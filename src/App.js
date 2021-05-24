@@ -21,22 +21,18 @@ function App(){
   ); 
 }
 
+{/*
 reactDom.render(
   <OneProblem />,
   document.getElementById('root')
 )
-
-{/*}
-ReactDOM.render(
-  <Effort />, 
-  document.getElementById('root')
-)
 */}
 
+{/*
 ReactDOM.render(
   <App/>,
   document.getElementById('root')
 )
+*/}
 
 export default App;
-
