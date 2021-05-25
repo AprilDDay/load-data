@@ -14,7 +14,9 @@ export const OneProblem = () => {
 
     {/*THIS FUNCTION IS NOT SHOWING A NEW RADIO BUTTON BUT IN CONSOLE LOG NEW RADIO BUTTON*/}
     function checkAnswer() {
-        if(this.selected === this.thisCompany.rightAnswer){
+        
+        if(selected === thisCompany.rightAnswer){
+//        if(this.selected === this.thisCompany.rightAnswer){
             
             {/* RUNS THREE TIMES ON FIRST LOAD*/}
             //const randomElement = Math.floor(Math.random()*stockData.length);
@@ -26,11 +28,15 @@ export const OneProblem = () => {
         
         } else {
             console.log("Oops! TRY AGAIN!"); 
+            return(
+                <div>Not quite...Try again!</div>
+            )
         }
 
     }
    
     {/*NEED TO GET THIS.thisCOMPANY OR SOMETHING */}
+    {/** STILL NOT SHOWING SAME ON CONSOLE AS ON WHAT IS RETURNED BELOW*/}
         return ( 
             <>
                 <div>
