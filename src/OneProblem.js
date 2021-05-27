@@ -2,8 +2,18 @@ import React from "react";
 import "./App.css";
 import { stockData } from "./data.js";
 import { useState } from 'react';
+import { render } from "@testing-library/react";
 
-export const OneProblem = () => {    
+class OneProblem extends Component {
+//export const OneProblem = () => {    
+//const OneProblem = () =>{
+
+    constructor(props){
+        super(props);
+        this.state= {
+            //maybe put use state here
+        };
+    }
 
     const [selected, setSelected] = useState(0);
     const randomElement = Math.floor(Math.random()*stockData.length);
@@ -21,18 +31,13 @@ export const OneProblem = () => {
                 <input type="radio" value={thisCompany.timeElapsed} name="moneyStuff"/>{thisCompany.timeElapsed} <br/>
             </div>
         );
-    }
+    };
 
     {/*THIS FUNCTION IS NOT SHOWING A NEW RADIO BUTTON BUT IN CONSOLE LOG NEW RADIO BUTTON*/}
     {/**THE FOLLOWING BUTTONS DO NOT SHOW AT ALL */}
     function checkAnswer() {
 
         if(selected === thisCompany.rightAnswer){
-//        if(this.selected === this.thisCompany.rightAnswer){
-            
-            {/* RUNS THREE TIMES ON FIRST LOAD*/}
-            //const randomElement = Math.floor(Math.random()*stockData.length);
-            //let thisCompany = stockData[randomElement];
 
             return(
                 <div>That's CORRECT!</div>,
@@ -46,18 +51,17 @@ export const OneProblem = () => {
             )
         }
 
-    }
-   
-    {/*NEED TO GET THIS.thisCOMPANY OR SOMETHING */}
-    {/** STILL NOT SHOWING SAME ON CONSOLE AS ON WHAT IS RETURNED BELOW*/}
-        return ( 
-            <>
-                <div>
-                    <p><button onClick={() => {setSelected(startGame)}}>start</button></p>
-                        
-                     <p><button onClick={() => {setSelected(checkAnswer)} }>submit</button></p>
-                </div>
-            </>
-        );
-};
+    };
 
+    render(){
+       // return(
+        <div>
+            <p><button onClick={() => {setSelected(startGame)}}>start</button></p>
+        
+            <p><button onClick={() => {setSelected(checkAnswer)} }>submit</button></p>
+        </div>
+    //);
+    }
+}
+}
+//export default OneProblem;
